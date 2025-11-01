@@ -8,13 +8,19 @@
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
 
-  <!-- App Icons -->
+  <!-- App Icon -->
   <link rel="icon" href="icon-192.png" type="image/png">
 
   <meta name="theme-color" content="#000000">
 
   <script>
-    // Redirect to your Google Site
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registered.'))
+        .catch((err) => console.log('Service Worker registration failed:', err));
+    }
+
+    // Redirect to Google Site
     window.location.href = "https://sites.google.com/view/learnmoneyearly/home";
   </script>
 </head>
