@@ -1,10 +1,11 @@
 {
   "name": "Learn Money Early",
   "short_name": "LME",
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
+  "description": "Learn Money Early - your go-to site to learn about money and financial skills early.",
   "icons": [
     {
       "src": "icon-192.png",
